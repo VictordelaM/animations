@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+    background-color: black;
+    height: 30vh;
+    width: 30vh;
+}
+
+
+div:hover {
+    animation: shadow 4s linear 0.3s infinite forwards alternate;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 5px 5px white;
+}
+    33% {
+        box-shadow: -7px -7px 20px 10px lightblue, 1px 1px 10px 10px blue;
+    }
+    66% {
+        box-shadow: -1px -1px 10px 10px lightblue, 7px 7px 20px 10px blue;
+    }
+    100% {
+        box-shadow: 0 0 20px 10px white;
+    }
+}
